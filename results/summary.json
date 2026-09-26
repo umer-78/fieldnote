@@ -1,0 +1,36 @@
+{
+ "n": 200,
+ "ocr_seconds_per_page": 1.712190639400069,
+ "systems": {
+  "OCR run here (RapidOCR)": {
+   "p95_ms": 2.325018000010459,
+   "total": {
+    "top1": 0.875,
+    "top5": 0.99,
+    "answer": 0.635,
+    "cited": 1.0
+   },
+   "date": {
+    "top1": 0.705,
+    "top5": 0.89,
+    "answer": 0.58,
+    "cited": 0.98
+   }
+  },
+  "hand transcription (ceiling)": {
+   "p95_ms": 2.331060800133854,
+   "total": {
+    "top1": 0.915,
+    "top5": 0.995,
+    "answer": 0.69,
+    "cited": 1.0
+   },
+   "date": {
+    "top1": 0.74,
+    "top5": 0.905,
+    "answer": 0.72,
+    "cited": 0.995
+   }
+  }
+ }
+}
