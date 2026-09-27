@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fieldnote · Umer Hashmi</title>
+  <meta name="description" content="Search over scanned documents that answers with a cited crop of the page: 200 scanned receipts, OCR&#x27;d once at ingestion, queried in milliseconds.">
+  <link rel="stylesheet" href="kit.css">
+  <style>:root { --accent: #4d7c0f; --on-accent: #fff; } @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --accent: #bef264; --on-accent: #0f0e0c; } }</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="crumb" href="https://umer-78.github.io/">← All projects</a>
+      <h1>Fieldnote</h1>
+      <p class="lede">Scanned paperwork is searchable only once it has text. Fieldnote reads each page with OCR once, when it is added, keeps every line with its position, and answers questions like “the total on the Popular Book receipt from 5 March” by finding the page, reading the value, and showing the crop of the page it came from, so a person can check it at a glance. Below: questions over 200 scanned receipts.</p>
+      <div class="links"><a class="btn primary" href="#ask">Ask about a receipt</a><a class="btn" href="https://github.com/umer-78/fieldnote">Code and method</a></div>
+    </header>
+    <main>
+      <section class="kpis" id="kpis"></section>
+      <section class="card" id="ask">
+        <h2>Ask about a receipt</h2>
+        <p class="sub">The question names the shop and one known fact; the index has to find the right page among 200 and read the other. The crop is the citation: the row the answer was read from.</p>
+        <div class="controls"><label for="pick">Question</label><select id="pick"></select></div>
+        <p class="box" id="question">Loading…</p>
+        <div class="readout" id="result"></div>
+        <h3 class="small muted" style="margin:16px 0 8px">The cited crop</h3>
+        <div id="crop" class="cropbox"></div>
+        <p class="small" id="pagelink"></p>
+      </section>
+      <section class="card">
+        <h2>200 receipts, 400 questions</h2>
+        <p class="sub">The same index built twice: on text read here with OCR, and on the dataset's hand transcription, which shows how much the OCR costs.</p>
+        <div id="table"></div>
+      </section>
+    </main>
+    <footer>Built by <a href="https://github.com/umer-78">Umer Hashmi</a> · Receipts from the ICDAR 2019 SROIE dataset, via <a href="https://github.com/zzzDavid/ICDAR-2019-SROIE">zzzDavid/ICDAR-2019-SROIE</a>; this page loads them from there when it opens and stores none of them · OCR: RapidOCR</footer>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

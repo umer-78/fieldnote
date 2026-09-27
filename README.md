@@ -1,5 +1,7 @@
 # fieldnote
 
+**Live demo:** https://umer-78.github.io/fieldnote/ (ask about a scanned receipt and see the cited crop)
+
 Retrieval-augmented answers whose evidence exists only inside a picture. Each modality is indexed by its own encoder, and every answer comes back with the page it came from and a crop of the region that holds it, so a person can check the number by eye.
 
 Converting an image to a caption throws away the values a question needs: "a photo of a receipt from a bakery" doesn't contain the total. So page images here are indexed through their text as read off the image, with each row's position kept. The encoder is RapidOCR, a real OCR model run locally. Answers are read from those rows, and the cited crop comes from the original image.
@@ -52,6 +54,7 @@ index.fused("high pressure trip")                   # reciprocal rank fusion acr
 pip install -e '.[dev]'
 pytest -q
 python -m fieldnote bench     # first run OCRs 200 scans (a few minutes), then seconds
+python -m fieldnote.demo      # rebuild the live demo's data in docs/ (no receipt text; the page loads the scans itself)
 ```
 
 The scans are downloaded on first use into `~/.cache/fieldnote`; nothing is committed.

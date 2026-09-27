@@ -1,0 +1,497 @@
+{
+ "summary": {
+  "n": 200,
+  "ocr_seconds_per_page": 1.712190639400069,
+  "systems": {
+   "OCR run here (RapidOCR)": {
+    "p95_ms": 2.325018000010459,
+    "total": {
+     "top1": 0.875,
+     "top5": 0.99,
+     "answer": 0.635,
+     "cited": 1.0
+    },
+    "date": {
+     "top1": 0.705,
+     "top5": 0.89,
+     "answer": 0.58,
+     "cited": 0.98
+    }
+   },
+   "hand transcription (ceiling)": {
+    "p95_ms": 2.331060800133854,
+    "total": {
+     "top1": 0.915,
+     "top5": 0.995,
+     "answer": 0.69,
+     "cited": 1.0
+    },
+    "date": {
+     "top1": 0.74,
+     "top5": 0.905,
+     "answer": 0.72,
+     "cited": 0.995
+    }
+   }
+  }
+ },
+ "base": "https://raw.githubusercontent.com/zzzDavid/ICDAR-2019-SROIE/27be4271b251c256f695acbade9a801bffe85994/data",
+ "examples": [
+  {
+   "receipt": "001",
+   "asks": "total",
+   "top": [
+    "001",
+    "366",
+    "564",
+    "372",
+    "059"
+   ],
+   "right_page": true,
+   "right_answer": false,
+   "box": [
+    27,
+    690,
+    375,
+    713
+   ]
+  },
+  {
+   "receipt": "001",
+   "asks": "date",
+   "top": [
+    "001",
+    "488",
+    "489",
+    "497",
+    "483"
+   ],
+   "right_page": true,
+   "right_answer": true,
+   "box": [
+    27,
+    366,
+    251,
+    388
+   ]
+  },
+  {
+   "receipt": "011",
+   "asks": "total",
+   "top": [
+    "011",
+    "513",
+    "509",
+    "505",
+    "059"
+   ],
+   "right_page": true,
+   "right_answer": true,
+   "box": [
+    87,
+    1214,
+    661,
+    1255
+   ]
+  },
+  {
+   "receipt": "011",
+   "asks": "date",
+   "top": [
+    "011",
+    "513",
+    "509",
+    "505",
+    "498"
+   ],
+   "right_page": true,
+   "right_answer": true,
+   "box": [
+    54,
+    787,
+    633,
+    839
+   ]
+  },
+  {
+   "receipt": "013",
+   "asks": "total",
+   "top": [
+    "013",
+    "564",
+    "340",
+    "338",
+    "343"
+   ],
+   "right_page": true,
+   "right_answer": true,
+   "box": [
+    200,
+    1054,
+    698,
+    1109
+   ]
+  },
+  {
+   "receipt": "013",
+   "asks": "date",
+   "top": [
+    "013",
+    "498",
+    "041",
+    "489",
+    "497"
+   ],
+   "right_page": true,
+   "right_answer": false,
+   "box": [
+    253,
+    1281,
+    522,
+    1334
+   ]
+  },
+  {
+   "receipt": "014",
+   "asks": "total",
+   "top": [
+    "014",
+    "564",
+    "365",
+    "059",
+    "101"
+   ],
+   "right_page": true,
+   "right_answer": false,
+   "box": [
+    242,
+    1765,
+    688,
+    1821
+   ]
+  },
+  {
+   "receipt": "014",
+   "asks": "date",
+   "top": [
+    "014",
+    "059",
+    "488",
+    "489",
+    "497"
+   ],
+   "right_page": true,
+   "right_answer": true,
+   "box": [
+    76,
+    314,
+    741,
+    377
+   ]
+  },
+  {
+   "receipt": "016",
+   "asks": "total",
+   "top": [
+    "018",
+    "016",
+    "564",
+    "504",
+    "020"
+   ],
+   "right_page": false,
+   "right_answer": false,
+   "box": [
+    63,
+    1175,
+    611,
+    1222
+   ]
+  },
+  {
+   "receipt": "016",
+   "asks": "date",
+   "top": [
+    "018",
+    "016",
+    "489",
+    "488",
+    "497"
+   ],
+   "right_page": false,
+   "right_answer": false,
+   "box": [
+    76,
+    469,
+    451,
+    517
+   ]
+  },
+  {
+   "receipt": "018",
+   "asks": "total",
+   "top": [
+    "018",
+    "016",
+    "564",
+    "504",
+    "020"
+   ],
+   "right_page": true,
+   "right_answer": true,
+   "box": [
+    63,
+    1175,
+    611,
+    1222
+   ]
+  },
+  {
+   "receipt": "018",
+   "asks": "date",
+   "top": [
+    "018",
+    "016",
+    "489",
+    "488",
+    "497"
+   ],
+   "right_page": true,
+   "right_answer": true,
+   "box": [
+    76,
+    469,
+    451,
+    517
+   ]
+  },
+  {
+   "receipt": "020",
+   "asks": "total",
+   "top": [
+    "020",
+    "281",
+    "564",
+    "145",
+    "333"
+   ],
+   "right_page": true,
+   "right_answer": true,
+   "box": [
+    116,
+    1182,
+    582,
+    1217
+   ]
+  },
+  {
+   "receipt": "020",
+   "asks": "date",
+   "top": [
+    "020",
+    "281",
+    "418",
+    "496",
+    "145"
+   ],
+   "right_page": true,
+   "right_answer": true,
+   "box": [
+    28,
+    551,
+    588,
+    585
+   ]
+  },
+  {
+   "receipt": "023",
+   "asks": "total",
+   "top": [
+    "023",
+    "489",
+    "483",
+    "479",
+    "501"
+   ],
+   "right_page": true,
+   "right_answer": true,
+   "box": [
+    264,
+    1166,
+    1083,
+    1221
+   ]
+  },
+  {
+   "receipt": "023",
+   "asks": "date",
+   "top": [
+    "023",
+    "489",
+    "483",
+    "479",
+    "473"
+   ],
+   "right_page": true,
+   "right_answer": true,
+   "box": [
+    273,
+    525,
+    1104,
+    571
+   ]
+  },
+  {
+   "receipt": "029",
+   "asks": "total",
+   "top": [
+    "029",
+    "543",
+    "191",
+    "455",
+    "513"
+   ],
+   "right_page": true,
+   "right_answer": true,
+   "box": [
+    118,
+    925,
+    625,
+    961
+   ]
+  },
+  {
+   "receipt": "029",
+   "asks": "date",
+   "top": [
+    "029",
+    "543",
+    "191",
+    "455",
+    "513"
+   ],
+   "right_page": true,
+   "right_answer": false,
+   "box": [
+    50,
+    466,
+    512,
+    495
+   ]
+  },
+  {
+   "receipt": "031",
+   "asks": "total",
+   "top": [
+    "031",
+    "094",
+    "195",
+    "308",
+    "427"
+   ],
+   "right_page": true,
+   "right_answer": true,
+   "box": [
+    310,
+    541,
+    624,
+    569
+   ]
+  },
+  {
+   "receipt": "031",
+   "asks": "date",
+   "top": [
+    "031",
+    "094",
+    "427",
+    "308",
+    "195"
+   ],
+   "right_page": true,
+   "right_answer": true,
+   "box": [
+    309,
+    715,
+    621,
+    742
+   ]
+  },
+  {
+   "receipt": "033",
+   "asks": "total",
+   "top": [
+    "033",
+    "035",
+    "036",
+    "051",
+    "432"
+   ],
+   "right_page": true,
+   "right_answer": false,
+   "box": [
+    520,
+    585,
+    639,
+    609
+   ]
+  },
+  {
+   "receipt": "033",
+   "asks": "date",
+   "top": [
+    "432",
+    "035",
+    "430",
+    "033",
+    "429"
+   ],
+   "right_page": false,
+   "right_answer": false,
+   "box": [
+    2054,
+    1902,
+    2575,
+    1994
+   ]
+  },
+  {
+   "receipt": "035",
+   "asks": "total",
+   "top": [
+    "035",
+    "051",
+    "033",
+    "036",
+    "432"
+   ],
+   "right_page": true,
+   "right_answer": false,
+   "box": [
+    564,
+    572,
+    685,
+    594
+   ]
+  },
+  {
+   "receipt": "035",
+   "asks": "date",
+   "top": [
+    "035",
+    "432",
+    "033",
+    "430",
+    "036"
+   ],
+   "right_page": true,
+   "right_answer": true,
+   "box": [
+    468,
+    342,
+    578,
+    360
+   ]
+  }
+ ]
+}
