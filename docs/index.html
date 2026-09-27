@@ -1,20 +1,27 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-scene="receipts">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fieldnote · Umer Hashmi</title>
   <meta name="description" content="Search over scanned documents that answers with a cited crop of the page: 200 scanned receipts, OCR&#x27;d once at ingestion, queried in milliseconds.">
+  <meta name="theme-color" content="#4d7c0f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="kit.css">
-  <style>:root { --accent: #4d7c0f; --on-accent: #fff; } @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --accent: #bef264; --on-accent: #0f0e0c; } }</style>
+  <link rel="stylesheet" href="fx.css">
+  <style>:root { --accent: #4d7c0f; --fx-2: #06b6d4; --fx-3: #f59e0b; --on-accent: #fff; } @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --accent: #bef264; --on-accent: #0f0e0c; } }</style>
 </head>
 <body>
   <div class="wrap">
-    <header>
-      <a class="crumb" href="https://umer-78.github.io/">← All projects</a>
+    <nav class="fx-nav" aria-label="On this page"><a class="fx-home" href="https://umer-78.github.io/">← All projects</a><a class="fx-gh" href="https://github.com/umer-78/fieldnote">GitHub</a></nav>
+    <header class="fx-hero">
+      <span class="fx-eyebrow">LLM engineering · Python</span>
       <h1>Fieldnote</h1>
       <p class="lede">Scanned paperwork is searchable only once it has text. Fieldnote reads each page with OCR once, when it is added, keeps every line with its position, and answers questions like “the total on the Popular Book receipt from 5 March” by finding the page, reading the value, and showing the crop of the page it came from, so a person can check it at a glance. Below: questions over 200 scanned receipts.</p>
       <div class="links"><a class="btn primary" href="#ask">Ask about a receipt</a><a class="btn" href="https://github.com/umer-78/fieldnote">Code and method</a></div>
+      <div class="fx-tags" aria-hidden="true"><div><span>python</span><span>rag</span><span>multimodal</span><span>ocr</span><span>retrieval</span><span>llm</span><span>python</span><span>rag</span><span>multimodal</span><span>ocr</span><span>retrieval</span><span>llm</span></div></div>
     </header>
     <main>
       <section class="kpis" id="kpis"></section>
@@ -37,5 +44,6 @@
     <footer>Built by <a href="https://github.com/umer-78">Umer Hashmi</a> · Receipts from the ICDAR 2019 SROIE dataset, via <a href="https://github.com/zzzDavid/ICDAR-2019-SROIE">zzzDavid/ICDAR-2019-SROIE</a>; this page loads them from there when it opens and stores none of them · OCR: RapidOCR</footer>
   </div>
   <script type="module" src="app.js"></script>
+  <script type="module" src="fx.js"></script>
 </body>
 </html>
