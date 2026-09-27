@@ -1,5 +1,7 @@
 # fieldnote
 
+[![Fieldnote: the live demo](.github/preview.jpg)](https://umer-78.github.io/fieldnote/)
+
 **Live demo:** https://umer-78.github.io/fieldnote/ (ask about a scanned receipt and see the cited crop)
 
 Retrieval-augmented answers whose evidence exists only inside a picture. Each modality is indexed by its own encoder, and every answer comes back with the page it came from and a crop of the region that holds it, so a person can check the number by eye.
