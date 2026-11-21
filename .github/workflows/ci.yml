@@ -16,6 +16,8 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
+      - name: Lint
+        run: pipx run ruff check .
       - run: pip install -e '.[dev]'
       # the full bench OCRs 200 scans (several minutes); CI runs the unit tests
       - run: pytest -q
